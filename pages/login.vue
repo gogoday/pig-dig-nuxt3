@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { FormSubmitEvent } from '#ui/types'
-import { z } from 'zod'
+import type { FormSubmitEvent } from '#ui/types';
+import { z } from 'zod';
 
 const user = useUser()
 if (user.value)
@@ -38,10 +38,10 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     Sign in
   </h1>
   <UCard class="max-w-sm mx-auto ">
-    <UButton block class="mb-4" variant="outline" color="gray" to="/auth/google" external>
+    <!-- <UButton block class="mb-4" variant="outline" color="gray" to="/auth/google" external>
       <UIcon name="i-logos-google-icon" class="h-6 w-6 m-1" /> Sign in with Google
-    </UButton>
-    <UDivider class="my-4" label="OR" />
+    </UButton> -->
+    <!-- <UDivider class="my-4" label="OR" /> -->
     <UAlert v-if="errorMessage" :title="errorMessage" class="mb-2" variant="soft" color="orange" />
     <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
       <UFormGroup label="Email" name="email">

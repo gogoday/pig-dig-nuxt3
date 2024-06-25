@@ -20,9 +20,9 @@ const footerNavs = [
         <Brand />
       </div>
 
-      <p class="leading-relaxed mt-2 text-[15px]">
+      <!-- <p class="leading-relaxed mt-2 text-[15px]">
         The starter you've been longing for!
-      </p>
+      </p> -->
     </div>
     <ul class="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
       <li v-for="item in footerNavs" :key="item.name" class="">
@@ -33,9 +33,9 @@ const footerNavs = [
     </ul>
     <div class="mt-8 items-center justify-between sm:flex gap-8">
       <div class="mt-4 sm:mt-0">
-        &copy; {{ new Date().getFullYear() }} UseNuxt
+        &copy; {{ new Date().getFullYear() }} PigDig
       </div>
-      <div class="mt-6 sm:mt-0">
+      <!-- <div class="mt-6 sm:mt-0">
         <ul class="flex items-center space-x-8">
           <li>
             <NuxtLink external href="https://github.com/samkanje/usenuxt-free">
@@ -58,7 +58,7 @@ const footerNavs = [
             </NuxtLink>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>
